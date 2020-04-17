@@ -8,6 +8,6 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "lib": [ "es6", "dom" ]
+    "skipLibCheck": true
   }
 }
