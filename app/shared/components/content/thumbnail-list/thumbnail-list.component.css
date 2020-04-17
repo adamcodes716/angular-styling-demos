@@ -1,0 +1,92 @@
+:host {
+  font-size: 1rem; }
+
+.items {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+.item {
+  border: solid 0.0625em;
+  padding: 1em; }
+  .item__thumbnail {
+    padding: 2em 1em;
+    text-align: center; }
+  .item__image {
+    max-width: 100%; }
+  .item__title {
+    font-size: 1.414em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 1em 0 0.7em; }
+  .item__description {
+    line-height: 1.75;
+    margin-top: 0; }
+  .item__button {
+    border-radius: 0.5em;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1em 1.4em;
+    transition: background ease 0.25s; }
+
+:host(.layout--01) .item {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em; }
+  :host(.layout--01) .item__thumbnail {
+    flex: 1;
+    height: 10em;
+    max-width: 10em;
+    min-width: 10em; }
+  :host(.layout--01) .item__image {
+    height: auto;
+    max-height: 100%; }
+  :host(.layout--01) .item__content {
+    flex: 1;
+    max-width: calc(100% - 11.5em);
+    padding: 0 1em 1em 0; }
+  :host(.layout--01) .item__title {
+    margin-top: 0.5em; }
+  :host(.layout--01) .item:first-child {
+    margin-top: 0; }
+
+:host(.layout--02) .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1em;
+  margin-right: -1em; }
+
+:host(.layout--02) .item {
+  flex: 1 calc(50% - 1em);
+  margin: 0 1em 2em;
+  max-width: calc(50% - 2em); }
+  :host(.layout--02) .item__image {
+    height: 12em; }
+  :host(.layout--02) .item__content {
+    padding: 0.5em; }
+
+:host(.color--01) .item {
+  border-color: #ccc; }
+  :host(.color--01) .item__button {
+    background: #2A9FBC; }
+    :host(.color--01) .item__button:hover {
+      background: #1F778D; }
+
+:host(.color--01) .item:first-child .item__thumbnail {
+  background: #8BC850; }
+
+:host(.color--01) .item:last-child .item__thumbnail {
+  background: #675BA7; }
+
+:host(.color--02) .item {
+  background: #A62E5C;
+  color: white; }
+  :host(.color--02) .item__thumbnail {
+    background: rgba(255, 255, 255, 0.3); }
+  :host(.color--02) .item__button {
+    background: rgba(255, 255, 255, 0.3); }
+    :host(.color--02) .item__button:hover {
+      background: rgba(255, 255, 255, 0.5); }

@@ -1,0 +1,100 @@
+:host {
+  font-size: 1rem; }
+
+h1 {
+  font-size: 2.827em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 1em 0 0.25em; }
+
+strong {
+  color: #2A9FBC;
+  cursor: pointer;
+  text-decoration: none; }
+  strong:hover, strong:active {
+    text-decoration: underline; }
+  strong:hover {
+    color: #1F778D; }
+  strong:active {
+    color: #F15B2A; }
+  strong:visited {
+    color: #404040; }
+
+.header {
+  background: #171717;
+  display: block;
+  font-family: arial, sans-serif;
+  overflow: hidden;
+  margin-bottom: 1.8em; }
+  .header__content {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0 1.5rem; }
+  .header__title {
+    font-size: 2.827em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 1em 0 0.25em;
+    color: white; }
+  .header__sub-title {
+    color: #888; }
+
+.content {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 1.5rem; }
+  .content__sections {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1em;
+    margin-right: -1em; }
+  .content__title {
+    font-size: 1.999em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 1em 0 0.5em; }
+  .content__sub-title {
+    font-size: 1.414em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 1em 0 0.7em; }
+  .content__paragraph {
+    line-height: 1.75;
+    margin-top: 0; }
+  @media (min-width: 52rem) {
+    .content__primary {
+      flex: 1 calc(66.66667% - 1em);
+      margin: 0 1em 2em;
+      max-width: calc(66.66667% - 2em); }
+    .content__secondary {
+      flex: 1 calc(33.33333% - 1em);
+      margin: 0 1em 2em;
+      max-width: calc(33.33333% - 2em); } }
+  @media (max-width: 52rem) {
+    .content__primary {
+      flex: 1 calc(100% - 1em);
+      margin: 0 1em 2em;
+      max-width: calc(100% - 2em); }
+    .content__secondary {
+      flex: 1 calc(100% - 1em);
+      margin: 0 1em 2em;
+      max-width: calc(100% - 2em); } }
+
+.footer {
+  background: #171717;
+  color: #555;
+  display: block;
+  font-family: arial, sans-serif;
+  margin-top: 1.8em;
+  overflow: hidden;
+  padding: 1em 0 3em; }
+  .footer__content {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0 1.5rem; }
+  .footer__title {
+    border-top: solid 1px #444;
+    display: block;
+    padding: 2.5em 0 0.3em; }
+  .footer__sub-title {
+    font-size: 0.8em; }

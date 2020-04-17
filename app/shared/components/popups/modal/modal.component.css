@@ -1,0 +1,87 @@
+.shield {
+  background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 49; }
+
+.modal {
+  backface-visibility: hidden;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  left: 50%;
+  min-width: 33.3125rem;
+  padding: 0 1.5em 1.5em;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50; }
+  .modal__close {
+    border: solid 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: 1.7em;
+    overflow: hidden;
+    position: absolute;
+    right: 0.5em;
+    text-indent: -9999px;
+    top: 0.5em;
+    width: 1.7em; }
+    .modal__close::before, .modal__close::after {
+      content: "";
+      height: 0.125em;
+      left: 0.25em;
+      margin-top: -0.0625em;
+      position: absolute;
+      top: 50%;
+      right: 0.25em; }
+    .modal__close::before {
+      transform: rotate(45deg); }
+    .modal__close::after {
+      transform: rotate(-45deg); }
+
+:host(.color--01) .modal {
+  background: white; }
+  :host(.color--01) .modal__close {
+    border-color: #ccc; }
+    :host(.color--01) .modal__close::before, :host(.color--01) .modal__close::after {
+      background: #ccc; }
+  :host(.color--01) .modal__highlight {
+    background: #303030;
+    overflow: hidden;
+    padding: 0 1em; }
+
+:host(.color--02) {
+  --background: #C43B0E;
+  --foreground: white; }
+  :host(.color--02) .modal {
+    background: #F15B2A;
+    color: white; }
+    :host(.color--02) .modal__close {
+      border: solid 1px white; }
+      :host(.color--02) .modal__close::before, :host(.color--02) .modal__close::after {
+        background: white; }
+    :host(.color--02) .modal__highlight {
+      background: #303030;
+      overflow: hidden;
+      padding: 0 1em;
+      --background: #77A032; }
+
+:host(.color--03) {
+  --background: #1F778D;
+  --foreground: white; }
+  :host(.color--03) .modal {
+    background: #2A9FBC;
+    color: white; }
+    :host(.color--03) .modal__close {
+      border: solid 1px white; }
+      :host(.color--03) .modal__close::before, :host(.color--03) .modal__close::after {
+        background: white; }
+    :host(.color--03) .modal__highlight {
+      background: #303030;
+      overflow: hidden;
+      padding: 0 1em;
+      --background: #77A032; }

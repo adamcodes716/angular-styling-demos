@@ -1,0 +1,42 @@
+:host {
+  font-size: 1rem; }
+
+.items {
+  display: flex;
+  list-style: none;
+  margin: 1em 0;
+  padding: 0; }
+
+.item-link {
+  background: #efefef;
+  border-radius: 0.5em;
+  display: block;
+  margin: 0 0.2em;
+  padding: 0.5em 1em;
+  transition: background ease 0.25s; }
+
+.item:first-child .item-link {
+  margin-left: 0; }
+
+.item-link--unselected {
+  background: rgba(229, 229, 229, 0.6);
+  color: #2A9FBC;
+  cursor: pointer; }
+  .item-link--unselected:hover {
+    background: #E5E5E5;
+    color: #1F778D;
+    text-decoration: none; }
+  .item-link--unselected:active {
+    color: #1F778D; }
+  .item-link--unselected:visited {
+    color: #2A9FBC; }
+
+.item-link--selected {
+  background: #2A9FBC;
+  color: white; }
+  .item-link--selected:hover, .item-link--selected:active {
+    background: #2A9FBC;
+    color: white;
+    cursor: default; }
+  .item-link--selected:visited {
+    color: white; }

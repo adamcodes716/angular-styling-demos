@@ -1,0 +1,41 @@
+:host {
+  background: var(--background, #ff0000);
+  color: var(--foreground, white);
+  font-size: 1rem;
+  margin: 1.5em 0;
+  padding: 1em 1.5em; }
+
+.icon {
+  fill: currentColor;
+  height: 4.2em;
+  margin-right: 1em;
+  max-width: 5em;
+  min-width: 5em; }
+
+.message__title {
+  font-size: 1.999em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 1em 0 0.5em;
+  margin-top: 0.5em; }
+
+.message__content {
+  line-height: 1.75;
+  margin-top: 0;
+  align-items: center;
+  display: inline-flex;
+  padding-bottom: 1em; }
+
+.message__icon {
+  fill: currentColor;
+  height: 1.5em;
+  margin-right: 0.75em;
+  width: 1.5em; }
+
+:host(.layout--01) {
+  display: block;
+  text-align: center; }
+
+:host(.layout--02) {
+  align-items: flex-start;
+  display: flex; }

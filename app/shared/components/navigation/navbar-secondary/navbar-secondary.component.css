@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  font-size: 1rem;
+  padding: 1em 0 1.8em; }
+
+.items {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 1.5rem;
+  display: flex;
+  list-style: none; }
+
+.item {
+  padding: 0 1em; }
+  .item__link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none; }
+    .item__link:hover {
+      color: white;
+      text-decoration: underline; }
+  .item:first-child {
+    padding-left: 0; }
+  .item:last-child {
+    padding-left: 0; }
+  .item--search {
+    margin-left: auto; }
+  .item__search {
+    align-items: center;
+    display: flex;
+    margin: 0; }
+    .item__search-field {
+      background: rgba(255, 255, 255, 0.25);
+      border: none;
+      border-radius: 0.3em;
+      color: white;
+      padding: 0.25em 0.5em;
+      width: 14em; }
+    .item__search-icon {
+      fill: white;
+      height: 0.8em;
+      width: 0.8em;
+      margin-left: 0.5em; }

@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  font-size: 1rem;
+  margin-top: 2em; }
+
+.content {
+  border: solid 0.0625em;
+  margin-right: 1em;
+  max-width: 35%;
+  padding: 1em; }
+  .content__title {
+    font-size: 1.414em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 1em 0 0.7em;
+    margin-top: 0.5em; }
+  .content__description {
+    line-height: 1.75;
+    margin-top: 0; }
+
+:host(.color--01) .content {
+  border-color: #ccc; }
+
+:host(.color--02) {
+  background: #A62E5C;
+  color: white;
+  padding: 1em; }
+  :host(.color--02) .content {
+    border-color: white; }

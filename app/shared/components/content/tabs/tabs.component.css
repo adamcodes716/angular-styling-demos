@@ -1,0 +1,69 @@
+:host {
+  display: block;
+  font-size: 1rem;
+  margin: 2em 0; }
+
+.items {
+  border-bottom: solid 1px #ccc;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.item {
+  margin-bottom: -1px; }
+  .item-link {
+    border-radius: 0.5em 0.5em 0 0;
+    border: solid 1px #ccc;
+    display: block;
+    margin: 0 0.2em;
+    padding: 1em;
+    transition: background ease 0.25s; }
+  .item:first-child .item-link {
+    margin-left: 0; }
+  .item-link--inactive {
+    background: #efefef;
+    color: #2A9FBC;
+    cursor: pointer; }
+    .item-link--inactive:hover {
+      background: #E5E5E5;
+      border-bottom-color: #ccc;
+      color: #1F778D;
+      text-decoration: none; }
+    .item-link--inactive:active {
+      color: #1F778D; }
+    .item-link--inactive:visited {
+      color: #2A9FBC; }
+  .item-link--active {
+    background: white;
+    border-bottom-color: transparent;
+    color: #404040; }
+    .item-link--active:hover, .item-link--active:active, .item-link--active:visited {
+      background: white;
+      border-bottom-color: transparent;
+      color: #404040;
+      cursor: default; }
+
+:host-context(saa-modal.color--02) .items {
+  border-bottom-color: white; }
+
+:host-context(saa-modal.color--02) .item-link {
+  border-color: white;
+  border-bottom-color: transparent; }
+
+:host-context(saa-modal.color--02) .item-link--inactive {
+  background: rgba(255, 255, 255, 0.3);
+  color: white; }
+  :host-context(saa-modal.color--02) .item-link--inactive:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom-color: white;
+    color: white; }
+  :host-context(saa-modal.color--02) .item-link--inactive:active, :host-context(saa-modal.color--02) .item-link--inactive:visited {
+    color: white; }
+
+:host-context(saa-modal.color--02) .item-link--active {
+  background: #F15B2A;
+  color: white; }
+  :host-context(saa-modal.color--02) .item-link--active:hover, :host-context(saa-modal.color--02) .item-link--active:active, :host-context(saa-modal.color--02) .item-link--active:visited {
+    background: #F15B2A;
+    color: white; }
