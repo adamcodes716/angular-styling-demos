@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'saa-app',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Native,
   template: `
     <header>
       <h1>Styling Angular Applications</h1>
